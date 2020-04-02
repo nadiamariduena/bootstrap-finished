@@ -1,0 +1,1127 @@
+/* --------- */
+body {
+  overflow-x: hidden;
+}
+:root {
+  font-size: 16px;
+}
+
+/* ---------BAR STYLES------- */
+body::-webkit-scrollbar {
+  width: 1em;
+}
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgb(167, 167, 167);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: none;
+}
+
+/*------CARD-IMG ABOUT--------- */
+#img-about {
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-top: 0px solid #000;
+}
+.img-cont {
+  width: 10%;
+  height: 55%;
+  background-color: yellow;
+  background-image: url(../port-draw/3d-process.gif);
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 5px solid #000;
+  /* filter: drop-shadow(-5px -16px 45px yellow); */
+}
+/*------ABOUT-SEE MORE---------- */
+.masthead-portfolio-one {
+  height: 100vh;
+  margin: auto;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 0px solid #000;
+  border-bottom: 0px solid #000;
+  background-color: #fff;
+}
+nav {
+  list-style-type: none;
+}
+
+.masthead-portfolio-one a {
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.5s ease-in-out;
+}
+.masthead-portfolio-one a:hover {
+  padding-bottom: 3px;
+  border-bottom-color: #333333;
+}
+a.about {
+  position: fixed;
+  top: 50%;
+  left: 40px;
+  transform-origin: 0 0;
+  /* the rotation will start from 0 top and 0 left
+  ,if i dont add this the text is going to be nearly close
+  of the image and i dont want that, i want the text to be close to the
+  wall of the document */
+  transform: rotate(-90deg) translate(-50%, 0);
+  /* translate(-50%, 0);
+  move it to the center */
+}
+
+a.contact {
+  position: fixed;
+  top: 50%;
+  right: 40px;
+  transform-origin: 100% 0;
+  transform: rotate(90deg) translate(50%, 0);
+}
+
+a.portfolio {
+  position: fixed;
+  left: 50%;
+  top: 40px;
+
+  transform: translate(-50%, 0);
+}
+/* ------ */
+h2.texto-dos {
+  position: absolute;
+  top: 78%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  font-family: "Poppins-light";
+  font-size: 4rem;
+  letter-spacing: 6px;
+}
+h3.texto-uno {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-family: "Arimo";
+  color: #000;
+  line-height: 40px;
+}
+/* img */
+img.navi-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  transform: translate(-50%, -50%);
+  border: 5px solid #000;
+}
+
+/* --------CARD ABOUT---------- */
+.card-about {
+  width: 60%;
+  height: 500px;
+
+  margin: auto;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+}
+a.anonymous {
+  color: #000;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.5s ease-in-out;
+}
+a.anonymous:hover {
+  padding-bottom: 3px;
+  border-bottom-color: #333333;
+}
+/* ----SELECTED WORKS--------------------- */
+
+.masthead-portfolio-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #000;
+  border-bottom: 0px solid #000;
+  margin: 0px 0 0px 0;
+  height: 100vh;
+  min-height: 400px;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+h1.texto1 {
+  font-size: 4vw;
+  font-family: "Arimo";
+  color: #000;
+}
+
+p.texto2 {
+  line-height: 10px;
+  font-size: 1.7vw;
+  font-style: italic;
+  color: #000;
+  font-family: "Poppins-medium";
+}
+
+.texto2 a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 4px solid #000; /* 2727e6*/
+  transition: border-bottom 0.8s ease;
+}
+
+.texto2 a:hover {
+  border-bottom-color: transparent;
+}
+
+/* ------CARD portfolio---------- */
+.card-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 45vh;
+  margin: auto;
+}
+.card {
+  border: 0;
+  margin: 0 5px;
+}
+
+/*------CARD-DOT--------- */
+#dot-cont {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #000;
+  margin-bottom: 60px 0;
+}
+.cont-box {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 100%;
+}
+/* --------------------- */
+/* ---------NEWSLETTER------------ */
+.hello {
+  background-color: black;
+}
+h2.heading-hello {
+  text-align: center;
+  line-height: 28px;
+  font-size: 2.5vw;
+  margin: 0px 0 50px 0;
+  font-family: "Arimo";
+  color: #cccccc;
+}
+.col-sm-6 {
+  background-color: #000;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* ------------------------------- */
+/* -----------footer-------------- */
+.footer-copyright {
+  margin-top: 50px;
+  border-top: 1px solid #000;
+}
+.please-getintouch {
+  margin: 0 auto;
+
+  padding: 0 40px;
+  margin: 50px 0;
+  line-height: 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    /*  background-color: #f09a9d;;*/
+  }
+
+  /*------ABOUT-SEE MORE---------- */
+  .masthead-portfolio-one {
+    height: 100vh;
+    margin: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 0px solid #000;
+    border-bottom: 0px solid #000;
+    background-color: #fff;
+  }
+  nav {
+    list-style-type: none;
+  }
+
+  .masthead-portfolio-one a {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+  }
+  .masthead-portfolio-one a:hover {
+    padding-bottom: 3px;
+    border-bottom-color: #333333;
+  }
+  a.about {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translate(-50%, 0);
+  }
+
+  a.contact {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform-origin: 100% 0;
+    transform: rotate(90deg) translate(50%, 0);
+  }
+
+  a.portfolio {
+    position: fixed;
+    left: 50%;
+    top: 20px;
+
+    transform: translate(-50%, 0);
+  }
+  /* ------ */
+  h2.texto-dos {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    text-align: center;
+    line-height: 59px;
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins-light";
+  }
+  h3.texto-uno {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: "Arimo";
+    color: #000;
+    line-height: 40px;
+  }
+  /* img */
+  img.navi-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    border: 5px solid #000;
+  }
+
+  /* --------CARD ABOUT---------- */
+  .card-about {
+    width: 75%;
+    height: 100%;
+  }
+
+  .card-about p {
+    font-size: 5vw;
+    padding: 40px 0 40px 0;
+  }
+  a.anonymous {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+  }
+  a.anonymous:hover {
+    padding-bottom: 3px;
+    border-bottom-color: #333333;
+  }
+  /* ----SELECTED WORKS--------------------- */
+
+  .masthead-portfolio-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 0px solid #000;
+    margin: 0px 0 0px 0;
+    height: 100%;
+    min-height: 70vh;
+    background-color: #fff;
+    overflow-x: hidden;
+  }
+
+  h1.texto1 {
+    text-align: center;
+    line-height: 59px;
+    font-size: 5vw;
+    font-family: "Arimo";
+    color: #000;
+  }
+
+  p.texto2 {
+    line-height: 10px;
+    font-size: 2.7vw;
+    font-style: italic;
+    color: #000;
+    font-family: "Poppins-medium";
+  }
+
+  .texto2 a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 4px solid #000; /* 2727e6*/
+    transition: border-bottom 0.8s ease;
+  }
+
+  .texto2 a:hover {
+    border-bottom-color: transparent;
+  }
+
+  /* ------CARD portfolio---------- */
+  .card-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    margin: auto;
+  }
+  .card {
+    border: 0;
+    margin: 10px 5px;
+  }
+
+  /*------CARD-DOT--------- */
+  #dot-cont {
+    width: 100vw;
+    height: 20vh;
+  }
+
+  /* ---------NEWSLETTER------------ */
+  .hello {
+    background-color: black;
+  }
+  h2.heading-hello {
+    text-align: center;
+    line-height: 59px;
+    font-size: 5vw;
+
+    margin: 0px 0 50px 0;
+
+    font-family: "Arimo";
+    color: #f3f3f3;
+  }
+  .col-sm-6 {
+    background-color: #000;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+/* ----------------Tablet Styles */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+@media only screen and (min-width: 401px) and (max-width: 560px) {
+  body {
+    /* background-color: yellow;  */
+  }
+
+  /*------ABOUT-SEE MORE---------- */
+  .masthead-portfolio-one {
+    height: 100vh;
+    margin: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 0px solid #000;
+    border-bottom: 0px solid #000;
+    background-color: #fff;
+  }
+  nav {
+    list-style-type: none;
+  }
+
+  .masthead-portfolio-one a {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+  }
+  .masthead-portfolio-one a:hover {
+    padding-bottom: 3px;
+    border-bottom-color: #333333;
+  }
+  a.about {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translate(-50%, 0);
+  }
+
+  a.contact {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform-origin: 100% 0;
+    transform: rotate(90deg) translate(50%, 0);
+  }
+
+  a.portfolio {
+    position: fixed;
+    left: 50%;
+    top: 20px;
+
+    transform: translate(-50%, 0);
+  }
+  /* ------ */
+  h2.texto-dos {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    text-align: center;
+    line-height: 59px;
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins-light";
+  }
+  h3.texto-uno {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: "Arimo";
+    color: #000;
+    line-height: 40px;
+  }
+  /* img */
+  img.navi-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    border: 5px solid #000;
+  }
+
+  /* --------CARD ABOUT---------- */
+  .card-about {
+    width: 75%;
+    height: 100%;
+  }
+
+  .card-about p {
+    font-size: 5vw;
+    padding: 40px 0 40px 0;
+  }
+  a.anonymous {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+  }
+  a.anonymous:hover {
+    padding-bottom: 3px;
+    border-bottom-color: #333333;
+  }
+  /* ----SELECTED WORKS--------------------- */
+
+  .masthead-portfolio-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 0px solid #000;
+    margin: 0px 0 0px 0;
+    height: 100%;
+    min-height: 70vh;
+    background-color: #fff;
+    overflow-x: hidden;
+  }
+
+  h1.texto1 {
+    text-align: center;
+    line-height: 59px;
+    font-size: 5vw;
+    font-family: "Arimo";
+    color: #000;
+  }
+
+  p.texto2 {
+    line-height: 10px;
+    font-size: 2.7vw;
+    font-style: italic;
+    color: #000;
+    font-family: "Poppins-medium";
+  }
+
+  .texto2 a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 4px solid #000; /* 2727e6*/
+    transition: border-bottom 0.8s ease;
+  }
+
+  .texto2 a:hover {
+    border-bottom-color: transparent;
+  }
+
+  /* ------CARD portfolio---------- */
+  .card-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    margin: auto;
+  }
+  .card {
+    border: 0;
+    margin: 10px 5px;
+  }
+
+  /*------CARD-DOT--------- */
+  #dot-cont {
+    width: 100vw;
+    height: 20vh;
+  }
+
+  /* ---------NEWSLETTER------------ */
+  .hello {
+    background-color: black;
+  }
+  h2.heading-hello {
+    text-align: center;
+    line-height: 59px;
+    font-size: 2.5vw;
+
+    margin: 0px 0 50px 0;
+
+    font-family: "Arimo";
+    color: #f3f3f3;
+  }
+  .col-sm-6 {
+    background-color: #000;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  /* ------------------------------- */
+  /* -----------footer-------------- */
+}
+
+/* ------------------------------- */
+/* -------------------------------- */
+/* ------------------------------- */
+/* -------------------------------- */
+
+@media only screen and (min-width: 561px) and (max-width: 760px) {
+  body {
+    /* background-color: goldenrod;  */
+  }
+  /*------ABOUT-SEE MORE---------- */
+
+  a.about {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translate(-50%, 0);
+  }
+
+  a.contact {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform-origin: 100% 0;
+    transform: rotate(90deg) translate(50%, 0);
+  }
+
+  a.portfolio {
+    position: fixed;
+    left: 50%;
+    top: 20px;
+
+    transform: translate(-50%, 0);
+  }
+  /* ------ */
+  h2.texto-dos {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    text-align: center;
+    line-height: 59px;
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins-light";
+  }
+  h3.texto-uno {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: "Arimo";
+    color: #000;
+    line-height: 40px;
+  }
+  /* img */
+  img.navi-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    border: 5px solid #000;
+  }
+
+  /* --------CARD ABOUT---------- */
+  .card-about {
+    width: 85%;
+    height: 100%;
+  }
+
+  .card-about p {
+    font-size: 5vw;
+    line-height: 45px;
+    padding: 40px 0 40px 0;
+  }
+  a.anonymous {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+  }
+  a.anonymous:hover {
+    padding-bottom: 3px;
+    border-bottom-color: #333333;
+  }
+  /* ----SELECTED WORKS--------------------- */
+
+  .masthead-portfolio-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 0px solid #000;
+    margin: 0px 0 0px 0;
+    height: 100%;
+    min-height: 70vh;
+    background-color: #fff;
+    overflow-x: hidden;
+  }
+
+  h1.texto1 {
+    text-align: center;
+    line-height: 59px;
+    font-size: 5vw;
+    font-family: "Arimo";
+    color: #000;
+  }
+
+  p.texto2 {
+    line-height: 10px;
+    font-size: 2.7vw;
+    font-style: italic;
+    color: #000;
+    font-family: "Poppins-medium";
+  }
+
+  .texto2 a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 4px solid #000; /* 2727e6*/
+    transition: border-bottom 0.8s ease;
+  }
+
+  .texto2 a:hover {
+    border-bottom-color: transparent;
+  }
+
+  /* ------CARD portfolio---------- */
+  .card-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    margin: auto;
+  }
+  .card {
+    border: 0;
+    margin: 10px 5px;
+  }
+
+  /*------CARD-DOT--------- */
+  #dot-cont {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 60px 0;
+  }
+  .cont-box {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border-radius: 100%;
+  }
+  /* ---------NEWSLETTER------------ */
+  .hello {
+    background-color: black;
+  }
+  h2.heading-hello {
+    text-align: center;
+    line-height: 28px;
+    font-size: 2.5vw;
+    margin: 0px 0 50px 0;
+    font-family: "Arimo";
+    color: #cccccc;
+  }
+  .col-sm-6 {
+    background-color: #000;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  /* ------------------------------- */
+  /* -----------footer-------------- */
+  .footer-copyright {
+    margin-top: 50px;
+    border-top: 1px solid #000;
+  }
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+@media only screen and (min-width: 761px) and (max-width: 960px) {
+  body {
+    /*  background-color: brown;*/
+  }
+
+  /* -------NAV-CARD--ABOUT---------- */
+  a.about {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translate(-50%, 0);
+  }
+
+  a.contact {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform-origin: 100% 0;
+    transform: rotate(90deg) translate(50%, 0);
+  }
+
+  a.portfolio {
+    position: fixed;
+    left: 50%;
+    top: 20px;
+
+    transform: translate(-50%, 0);
+  }
+  /* ------ */
+  h2.texto-dos {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    text-align: center;
+    line-height: 59px;
+    font-size: 3.6rem;
+    letter-spacing: 2px;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins-light";
+  }
+  h3.texto-uno {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-family: "Arimo";
+    color: #000;
+    line-height: 40px;
+  }
+  /* img */
+  img.navi-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    border: 5px solid #000;
+  }
+
+  /* --------CARD ABOUT---------- */
+  .card-about {
+    width: 70%;
+    height: 100%;
+    padding: 0 0 80px 0;
+  }
+
+  .card-about p {
+    font-size: 3.5vw;
+    line-height: 45px;
+    padding: 40px 0 40px 0;
+  }
+  a.anonymous {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+  }
+  a.anonymous:hover {
+    padding-bottom: 3px;
+    border-bottom-color: #333333;
+  }
+  /* ----SELECTED WORKS--------------------- */
+
+  .masthead-portfolio-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #000;
+    border-bottom: 0px solid #000;
+    margin: 0px 0 0px 0;
+    height: 100%;
+    min-height: 70vh;
+    background-color: #fff;
+    overflow-x: hidden;
+  }
+
+  h1.texto1 {
+    text-align: center;
+    line-height: 59px;
+    font-size: 5vw;
+    font-family: "Arimo";
+    color: #000;
+  }
+
+  p.texto2 {
+    line-height: 10px;
+    font-size: 2.7vw;
+    font-style: italic;
+    color: #000;
+    font-family: "Poppins-medium";
+  }
+
+  .texto2 a {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 4px solid #000; /* 2727e6*/
+    transition: border-bottom 0.8s ease;
+  }
+
+  .texto2 a:hover {
+    border-bottom-color: transparent;
+  }
+
+  /* ------CARD portfolio---------- */
+  .card-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 80vh;
+    margin: auto;
+  }
+  .card {
+    border: 0;
+    margin: 10px 10px;
+  }
+
+  /*------CARD-DOT------ */
+
+  /* ---NEWSLETTER------ */
+
+  h2.heading-hello {
+    text-align: center;
+    line-height: 25px;
+    font-size: 3vw;
+  }
+
+  /* ------------------------------- */
+  /* -----------footer-------------- */
+
+  .footer-copyright {
+    margin-top: 50px;
+    border-top: 1px solid #000;
+  }
+  .please-getintouch {
+    margin: 0 auto;
+    padding: 0 0px;
+    margin: 0px 0;
+    line-height: 20px;
+  }
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    /* background-color: olive;  */
+    overflow-x: hidden;
+  }
+
+  /*------ABOUT-SEE MORE---------- */
+  .masthead-portfolio-one {
+    height: 100vh;
+    margin: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 0px solid #000;
+    border-bottom: 0px solid #000;
+    background-color: #fff;
+  }
+  nav {
+    list-style-type: none;
+  }
+
+  .masthead-portfolio-one a {
+    color: #000;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 0.5s ease-in-out;
+  }
+  .masthead-portfolio-one a:hover {
+    padding-bottom: 3px;
+    border-bottom-color: #333333;
+  }
+
+  /* --------CARD ABOUT---------- */
+
+  /* ----SELECTED WORKS--------------------- */
+
+  h1.texto1 {
+    font-size: 3.5vw;
+  }
+
+  p.texto2 {
+    line-height: 10px;
+    font-size: 1.5vw;
+  }
+
+  /* ------CARD portfolio---------- */
+  .card-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 45vh;
+    margin: auto;
+  }
+  .card {
+    border: 0;
+    margin: 0 5px;
+  }
+
+  /* ---------NEWSLETTER------------ */
+  .hello {
+    background-color: black;
+  }
+  h2.heading-hello {
+    width: 60%;
+    margin: 50px auto;
+    font-size: 3vw;
+    font-weight: 100;
+    line-height: 35px;
+    color: rgb(184, 184, 184);
+    font-family: "Poppins-light";
+    opacity: 0.5;
+  }
+  .col-sm-6 {
+    background-color: #000;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  /* ------------------------------- */
+  /* -----------footer-------------- */
+  .footer-copyright {
+    margin-top: 50px;
+    border-top: 1px solid #000;
+  }
+
+  .please-getintouch {
+    margin: 0 auto;
+    padding: 0 0px;
+    margin: 0px 0;
+    line-height: 20px;
+  }
+}
